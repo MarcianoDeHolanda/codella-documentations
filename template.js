@@ -1,7 +1,8 @@
 module.exports = {
     name: '',
     description: '',
-    maven_integration: `
+    pluginId: '',
+    mavenIntegration: `
     `,
     usage: `
     `
