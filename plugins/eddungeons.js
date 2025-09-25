@@ -17,7 +17,7 @@ module.exports = {
                 <artifactId>api</artifactId>
                 <version>1.2</version>
                 <scope>system</scope>
-                <systemPath>${basedir}/lib/EdDungeons-API.jar</systemPath>
+                <systemPath>\${basedir}/lib/EdDungeons-API.jar</systemPath>
             </dependency>
             
             <!-- EdLib low-level API -->
@@ -26,7 +26,7 @@ module.exports = {
                 <artifactId>api</artifactId>
                 <version>1.0</version>
                 <scope>system</scope>
-                <systemPath>${basedir}/lib/EdLib-API.jar</systemPath>
+                <systemPath>\${basedir}/lib/EdLib-API.jar</systemPath>
             </dependency>
         </dependencies>
     `,
