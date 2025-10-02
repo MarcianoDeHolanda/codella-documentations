@@ -457,6 +457,28 @@ module.exports = {
         HELMET(5),
         BODY(6),
         SADDLE(7);
+        
+        When creating enchants/spawning EdLib packet-based entities, make sure you:
+        - Run the hitMob and startAutoHit methods asynchronously inside the Sword API
+        - Spawn the entities asynchronously
+        - Always spawn entities packet-based for the player who procced the enchant. If you spawn particles, spawn them only for the player who procced the enchant. Remember that the enchant effects must only be seen by the player.
+        - If you want to move a packet-based entity, always create custom goal implementations or use existing ones. If you create custom ones, move the mob with the EdEntity#shortTp(double x, double y, double z) method.
+        - If you create an enchantment and need to deal damage to a mob, deal damage to the mobId inside the CustomEnchantData if it hasn't been specified to damage other mobs.
+        - Always add cool particle effects to the enchantments. The more, the better. Spawn these only to the player and asynchronously.
+        - After you've created an enchant, tell the user that to set it up they should add a new file inside the plugins/EdDungeons/enchants folder:
+            file name: <enchant_id>.yml
+            file contents:
+            \`\`\`
+            max-chance: 0 # The max chance of the enchant. Example: 5
+            max-level: 0 # The max level of the enchant. Example: 1000
+            material: '' # A Bukkit Material representing the enchantment. Example: SLIME_BALL
+            type: 'api' # Always api type
+            display-name: '' # Example: Slime Bunny
+            cost:
+              currency: souls # Always souls
+              starting-cost: 100
+              increase-cost-by: 500
+            \`\`\`
     `
 };
 
