@@ -340,7 +340,6 @@ module.exports = {
         Goal System
         EdGoal abstract class: es.edwardbelt.edlib.iapi.entity.goal // you can create your own goals for custom mob movements
         Static Methods
-        void setPlugin(JavaPlugin plugin)
         Instance Methods
         void start()
         void init()
