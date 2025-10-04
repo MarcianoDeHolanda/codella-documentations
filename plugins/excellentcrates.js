@@ -14,6 +14,7 @@ module.exports = {
               <groupId>su.nightexpress.excellentcrates</groupId>
               <artifactId>ExcellentCrates</artifactId>
               <version>6.2.1</version>
+              <scope>provided</scope>
             </dependency>
         </dependencies>
     `,
