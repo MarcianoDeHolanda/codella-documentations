@@ -2,19 +2,18 @@ module.exports = {
     name: 'ExcellentCrates',
     description: 'Crates plugin for Minecraft.',
     pluginId: 'ExcellentCrates',
-    systemDownloadURL: 'https://raw.githubusercontent.com/CodellaAI/codella-documentations/main/lib/ExcellentCrates-API.jar',
     mavenIntegration: `
         <repositories>
-            // SYSTEM DEPENDENCY NO REPOSITORY
+            <repository>
+              <id>nightexpress-releases</id>
+              <url>https://repo.nightexpressdev.com/releases</url>
+            </repository>
         </repositories>
         <dependencies>
-            <!-- EdDungeons main API -->
             <dependency>
-                <groupId>su.nightexpress</groupId>
-                <artifactId>excellentcrates</artifactId>
-                <version>6.3.3</version>
-                <scope>system</scope>
-                <systemPath>\${basedir}/lib/ExcellentCrates-API.jar</systemPath>
+              <groupId>su.nightexpress.excellentcrates</groupId>
+              <artifactId>ExcellentCrates</artifactId>
+              <version>6.2.1</version>
             </dependency>
         </dependencies>
     `,
