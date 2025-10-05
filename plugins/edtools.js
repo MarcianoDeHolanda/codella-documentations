@@ -1,6 +1,6 @@
 module.exports = {
     name: 'EdTools',
-    description: 'API to access EdTools features including zone sessions, currencies, enchantments, GUI systems, booster management, leveling systems, and advanced entity management with fake entities and goal-based AI behavior',
+    description: 'API to access EdTools features including zone sessions, currencies, enchantments, omnitools, luckyblocks, GUI systems, booster management, leveling systems, and advanced entity management with fake entities and goal-based AI behavior',
     pluginId: 'EdDungeons',
     systemDownloadURL: `
         https://raw.githubusercontent.com/CodellaAI/codella-documentations/main/lib/EdTools-API.jar
