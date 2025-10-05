@@ -13,7 +13,7 @@ module.exports = {
     <dependency>
       <groupId>com.andrei1058.bedwars</groupId>
       <artifactId>bedwars-api</artifactId>
-      <version>21.2</version>
+      <version>25.9</version>
     </dependency>
     `,
     usage: `
