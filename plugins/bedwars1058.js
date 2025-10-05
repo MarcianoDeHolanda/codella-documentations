@@ -17,7 +17,7 @@ module.exports = {
     </dependency>
     `,
     usage: `
-    Add it as softdepend in plugin.yml: softdepend: [BedWars1058]
+    Add it as depend in plugin.yml: depend: [BedWars1058]
     Check if BedWars1058 is on the server:
     @Override
     public void onEnable() {
