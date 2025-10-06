@@ -338,7 +338,25 @@ module.exports = {
         String getSellItem() - Gets the sell item ID
         String getToolId() - Inherited from EnchantData
         
-        
+        EdLibAPI interface: es.edwardbelt.edlib.iapi
+        Static Methods
+        void setInstance(EdLibAPI instance)
+        EdLibAPI getInstance()
+        Instance Methods
+        EdModel getModel(String modelId)
+        EdEntity createEntity(EntityType type, Location location)
+        EdEntity createInteractionEntity(Location location, float width, float height)
+        EdEntity createBlockDisplay(Location location, Matrix4f transformation, Material material)
+        EdEntity createItemDisplay(Location location, Matrix4f transformation, String itemData, int[] customModelData, String nbtData)
+        void sendActionbar(Player player, String message)
+        void sendXPBar(Player player, float progress, int level)
+        void hidePlayer(Player viewer, Player target)
+        void showPlayer(Player viewer, Player target)
+        void sendBlocks(Player player, Map<Vector, Material> blocks)
+        void sendBossBar(Player player, UUID bossBarId, String title, float progress, String color)
+        void updateBossBarTitle(Player player, UUID bossBarId, String title)
+        void updateBossBarProgress(Player player, UUID bossBarId, float progress)
+        void removeBossBar(Player player, UUID bossBarId)
         Model System
         EdModel interface: es.edwardbelt.edlib.iapi.model
         Instance Methods
