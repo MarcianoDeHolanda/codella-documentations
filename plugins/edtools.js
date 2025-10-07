@@ -571,7 +571,7 @@ module.exports = {
         SADDLE(7);
         
         When creating enchants/spawning EdLib packet-based entities, make sure you:
-        - Run the mineBlockAsPlayer methods asynchronously inside the Zones API
+        - Run the mineBlockAsPlayer methods asynchronously inside the Zones API. Always set by default the affectEnchants boolean to false. Also, if you are mining a block inside an enchant always set the same toolId in the mineBlockAsPlayer method as the enchant CustomEnchantData.
         - Spawn the entities asynchronously
         - Always spawn entities packet-based for the player who procced the enchant. If you spawn particles, spawn them only for the player who procced the enchant. Remember that the enchant effects must only be seen by the player.
         - If you want to move a packet-based entity, always create custom goal implementations or use existing ones. If you create custom ones, move the mob with the EdEntity#shortTp(double x, double y, double z) method.
